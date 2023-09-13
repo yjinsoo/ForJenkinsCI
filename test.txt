@@ -1,0 +1,7 @@
+https://developer-nyong.tistory.com/47
+
+git toekn : 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
+
+https://github.com/yjinsoo/ForJenkinsCI.git
+
+git branch: 'ci-test', credentialsId: 'dragon', url: 'https://github.com/yjinsoo/ForJenkinsCI.git'
