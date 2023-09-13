@@ -5,4 +5,3 @@ https://github.com/yjinsoo/ForJenkinsCI.git
 
 git branch: 'ci-test', credentialsId: 'dragon', url: 'https://github.com/yjinsoo/ForJenkinsCI.git'
 
-test
