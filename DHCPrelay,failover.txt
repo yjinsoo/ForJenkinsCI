@@ -1,0 +1,79 @@
+8-1) dhcrelay 활성화
+sudo systemctl enable dhcrelay
+
+8-2) dhcrelay.service 등록
+sudo vi /etc/systemd/system/multi-user.target.wants/dhcrelay.service
+[Service]
+ExecStart=/usr/sbin/dhcrelay -d --no-pid 192.168.101.10
+#(192.168.101.10은 DHCP 서버의 주소 이다. )
+
+8-3) 데몬 즉시 적용 및 시작
+sudo systemctl --system daemon-reload
+sudo systemctl start dhcrelay
+
+--------------------------------------------------
+***Primary Server(192.168.101.10)에서 설정하기
+# vi /etc/dhcp/dhcpd.conf
+# failover
+failover peer "failover-partner" {
+        primary;
+        address 192.168.101.10;
+        port 647;
+        peer address 192.168.101.11;
+        peer port 647;
+#secondary와 연결 실패할때 대기 할 시간
+        max-response-delay 30;
+        max-unacked-updates 10;
+#클라이언트 요청경과시간이 3초이상일때, 상대 peer에서 응답
+        load balance max seconds 3;
+# MCLT（최대 클라이언트 시간 지연）는 DHCP 임대가 만료된 후 DHCP 클라이언트에 제공되는 추가 시간입니다.
+        mclt 1800;
+# Primary와Secondary가 각각 점유할 Client 수 지정 128/256 개씩 점유
+        split 128;
+}
+# mclt 옵션과 split 옵션의 경우 반드시 Primary Server에서 지정하며, 생략하면 안된다
+
+# A slightly different configuration for an internal subnet.
+subnet 192.168.101.0 netmask 255.255.255.0 {
+#  range 192.168.101.50 192.168.101.252;
+  option domain-name-servers 8.8.8.8;
+  option domain-name "labs.local";
+#  option routers 10.5.5.1;
+  option broadcast-address 192.168.101.255;
+  default-lease-time 600;
+  max-lease-time 7200;
+pool {
+        failover peer "failover-partner";
+        range 192.168.101.50 192.168.101.252;
+ }
+} 
+
+
+***Secondary Server(192.168.101.11)에서 설정하기
+#vi /etc/dhcp/dhcpd.conf
+# failover
+failover peer "failover-partner" {
+        secondary;
+        address 192.168.101.11;
+        port 647;
+        peer address 192.168.101.10;
+        peer port 647;
+        max-response-delay 30;
+        max-unacked-updates 10;
+        load balance max seconds 3;
+}
+
+# A slightly different configuration for an internal subnet.
+subnet 192.168.101.0 netmask 255.255.255.0 {
+#  range 10.5.5.26 10.5.5.30;
+  option domain-name-servers 8.8.8.8;
+  option domain-name "labs.local";
+#  option routers 10.5.5.1;
+  option broadcast-address 192.168.101.255;
+  default-lease-time 600;
+  max-lease-time 7200;
+pool {
+        failover peer "failover-partner";
+        range 192.168.101.50 192.168.101.252;
+ }
+}
