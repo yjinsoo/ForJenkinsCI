@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pro3-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pro3-db
+  template:
+    metadata:
+      labels:
+        app: pro3-db
+    spec:
+      containers:
+        - name: pro3-db-pod
+          image: ############이미지 달라##############
+          ports:
+            - containerPort: 3306
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: dkagh1.
+            - name: MYSQL_DATABASE
+              value: userdb
+            - name: MYSQL_USER
+              value: kkycake
+            - name: MYSQL_PASSWORD
+              value: dkagh1.
+          resources:
+            limits:
+              memory: "2Gi"
+            requests:
+              memory: "1Gi"
+          volumeMounts:
+            - name: maria-config
+              mountPath: /docker-entrypoint-initdb.d/
+            - name: nfs    
+              mountPath: /var/lib/mysql
+      volumes:
+        - name: maria-config
+          configMap:
+            name: maria-config
+            items:
+              - key: kkycake.sql
+                path: kkycake.sql
+        - name: nfs
+          persistentVolumeClaim:
+            claimName: nfs-pvc
