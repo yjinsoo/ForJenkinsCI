@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pro3-app
-        image: #############이미지 달라###############
+        image: jinsu0625/pro3-tomcat:0.5 
         ports:
         - containerPort: 8080
         env:
