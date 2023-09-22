@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pro3-web
-        image: jinsu0625/pro3-nginx:0.3
+        image: jinsu0625/pro3-nginx:dragon
         ports:
         - containerPort: 80
         env:
