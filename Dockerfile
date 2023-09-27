@@ -6,7 +6,7 @@ ADD ./html/css /usr/share/nginx/html/css
 ADD ./html/fonts /usr/share/nginx/html/fonts
 ADD ./html/js /usr/share/nginx/html/js
 ADD ./html/images /usr/share/nginx/html/images
-ADD ./html/index.html /usr/share/nginx/html/
+ADD ./html/*.html /usr/share/nginx/html/
 ADD tomcat1.conf /
 WORKDIR /usr/share/nginx/html
 EXPOSE 80
