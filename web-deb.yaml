@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: pro3-web
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -19,4 +19,4 @@ spec:
         - containerPort: 80
         env:
           - name: TOMCATS
-            value: pro3-app-service
+            value: k8s-default-pro3apps-1bd24edb6b-c79084554ce23fed.elb.us-west-2.amazonaws.com
