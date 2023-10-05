@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pro3-web
-        image: jinsu0625/pro3-nginx:dragon
+        image: 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:dragon
         ports:
         - containerPort: 80
         env:
