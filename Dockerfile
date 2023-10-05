@@ -1,4 +1,4 @@
-FROM docker push 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:latest
+FROM 784695908961.dkr.ecr.us-west-2.amazonaws.com/nginx:latest
 ENV TOMCATS 10.0.0.4
 RUN apt-get update && apt-get install -y vim && apt-get install -y zip
 RUN rm -rf /usr/share/nginx/html && rm -rf /etc/nginx/conf.d/default.conf
