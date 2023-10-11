@@ -19,4 +19,4 @@ spec:
         - containerPort: 80
         env:
           - name: TOMCATS
-            value: k8s-default-pro3apps-1bd24edb6b-c79084554ce23fed.elb.us-west-2.amazonaws.com
+            value: k8s-default-pro3apps-950def5ade-510dcad5dffe5627.elb.us-west-2.amazonaws.com
