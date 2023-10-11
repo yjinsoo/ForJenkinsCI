@@ -130,8 +130,6 @@
 			</p>		
 		</div>
 	</div>
-
-
 	<!-- 설문조사 설명 박스 레이아웃 -->
 	<div id="i_explanation_container" class="cDivRelativeH cDivPtagHmVisible cBorderRadiusAll_10 cPtagOverFlow cBgWhiteLight cBorderAllBlueMiddle_1 cShadowBoxGray1px" style="width: 70%; height: 20%; margin: 0 auto; padding: 5%; top: 6%;">
 		<p id="i_explanation_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorBlueBold cFontNormalWeight cTextJustifyWidthAlign">
@@ -142,6 +140,7 @@
 		class="cDivRelativeH cBgWhiteLight"
 		style="width: 100%; height: 10%; margin: 0 auto; padding: 0%; border: none; top: 30%;">		
 	</div>
+
 	<form method="post" action="surveytest.jsp">
 	<!-- 설문조사 문제 레이아웃 -->
 	<div id="i_qna_1_container"
@@ -153,76 +152,29 @@
 			<div id="i_qna_1_idx_container" 
 				class="cDivRelativeW cDivPtagHmHidden"
 				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
-				<p id="i_qna_1_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
-					[1]
+				<p id="i_qna_1_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign" >
 				</p>		
 			</div>
 			<div id="i_qna_1_title_content_container" 
 				class="cDivRelativeW cDivPtagHmVisible"
-				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
-				<p id="i_qna_1_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign">
-					이 브라우저 사용을 만족하십니까?
-				</p>		
+				style="width: 100%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
+				<p id="i_qna_1_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff;">
+					<b>[1] 이 브라우저 사용을 만족하십니까?</b>
+				</p>
+				<hr>		
 			</div>
 		</div>
-
 		<div id="i_qna_1_content"
 			class="cDivRelativeH"
 			style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
 			<div class="cDivRelativeH"
 				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="browser" value="1"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 만족
-					</p>									
-				</div>				
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="browser" value="2"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="browser" value="3"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						보통
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="browser" value="4"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						불만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="browser" value="5"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 불만족
-					</p>									
-				</div>
+					<input type="radio" name="browser" value="5"/>매우만족<p>	
+					<input type="radio" name="browser" value="4"/> 만족	<p>				
+					<input type="radio" name="browser" value="3"/> 보통  <p>			
+					<input type="radio" name="browser" value="2"/> 불만족<p></p>					
+					<input type="radio" name="browser" value="1"/> 매우 불만족	<p></p>				
+
 			</div>		
 		</div>
 	</div>
@@ -239,75 +191,32 @@
 				class="cDivRelativeW cDivPtagHmHidden"
 				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
 				<p id="i_qna_2_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
-					[2]
 				</p>		
 			</div>
 			<div id="i_qna_2_title_content_container" 
 				class="cDivRelativeW cDivPtagHmVisible"
 				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
-				<p id="i_qna_2_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign">
-					상의에 대해서는 만족하십니까?
-				</p>		
+				<p id="i_qna_2_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b>[2] 상의에 대해서는 만족하십니까?</b>
+				</p>	
 			</div>
 		</div>
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="upper" value="5"/>매우만족<p>	
+				<input type="radio" name="upper" value="4"/> 만족	<p>				
+				<input type="radio" name="upper" value="3"/> 보통  <p>			
+				<input type="radio" name="upper" value="2"/> 불만족<p></p>					
+				<input type="radio" name="upper" value="1"/> 매우 불만족	<p></p>				
 
-		<div id="i_qna_2_content"
-			class="cDivRelativeH"
-			style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="upper" value="1"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="upper" value="2"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="upper" value="3"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						보통
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="upper" value="4"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						불만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="upper" value="5"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 불만족
-					</p>									
-				</div>
+		</div>		
+	</div>
+</div>
+
 			</div>		
 		</div>
 	</div>
@@ -324,79 +233,32 @@
 				class="cDivRelativeW cDivPtagHmHidden"
 				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
 				<p id="i_qna_3_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
-					[3]
 				</p>		
 			</div>
 			<div id="i_qna_3_title_content_container" 
 				class="cDivRelativeW cDivPtagHmVisible"
 				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
-				<p id="i_qna_3_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign">
-					하의에 대해서는 만족하십니까?
+				<p id="i_qna_3_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b>[3] 하의에 대해서는 만족하십니까?</b>
 				</p>		
 			</div>
 		</div>
 
-		<div id="i_qna_3_content"
-			class="cDivRelativeH"
-			style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="pants" value="1"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 만족
-					</p>									
-				</div>				
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="pants" value="2"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="pants" value="3"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						보통
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="pants" value="4"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						불만족
-					</p>									
-				</div>
-			</div>
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="pants" value="5"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 불만족
-					</p>									
-				</div>
-			</div>		
-		</div>
-	</div>
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="pants" value="5"/>매우만족<p>	
+				<input type="radio" name="pants" value="4"/> 만족	<p>				
+				<input type="radio" name="pants" value="3"/> 보통  <p>			
+				<input type="radio" name="pants" value="2"/> 불만족<p></p>					
+				<input type="radio" name="pants" value="1"/> 매우 불만족	<p></p>				
 
+		</div>		
+	</div>
+</div>
 
 	<!-- 설문조사 문제 레이아웃 -->
 	<div id="i_qna_4_container"
@@ -409,78 +271,32 @@
 				class="cDivRelativeW cDivPtagHmHidden"
 				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
 				<p id="i_qna_4_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
-					[4]
 				</p>		
 			</div>
 			<div id="i_qna_4_title_content_container" 
 				class="cDivRelativeW cDivPtagHmVisible"
 				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
-				<p id="i_qna_4_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign">
-					신발에 대해서는 만족하십니까?
+				<p id="i_qna_4_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b>[4] 신발에 대해서는 만족하십니까?</b>
 				</p>		
 			</div>
 		</div>
 
-		<div id="i_qna_4_content"
-			class="cDivRelativeH"
-			style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="shoes" value="1"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMpantsiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 만족
-					</p>									
-				</div>				
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="shoes" value="2"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="shoes" value="3"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						보통
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="shoes" value="4"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						불만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="shoes" value="5"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 불만족
-					</p>									
-				</div>
-			</div>		
-		</div>
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="shoes" value="5"/>매우만족<p>	
+				<input type="radio" name="shoes" value="4"/> 만족	<p>				
+				<input type="radio" name="shoes" value="3"/> 보통  <p>			
+				<input type="radio" name="shoes" value="2"/> 불만족<p></p>					
+				<input type="radio" name="shoes" value="1"/> 매우 불만족	<p></p>				
+
+		</div>		
 	</div>
+</div>
 
 
 	<!-- 설문조사 문제 레이아웃 -->
@@ -494,79 +310,32 @@
 				class="cDivRelativeW cDivPtagHmHidden"
 				style="width: 35px; height: 100%; margin: 0; padding: 0; border: none; left: 2%">		
 				<p id="i_qna_5_idx_txt" class="cPtagHmHidden cPtagFontSizeContent cFontColorWhiteLight cFontBoldWeight cTextCenterWidthAlign">
-					[5]
 				</p>		
 			</div>
 			<div id="i_qna_5_title_content_container" 
 				class="cDivRelativeW cDivPtagHmVisible"
 				style="width: 80%; height: 100%; margin: 0; padding: 0; border: none; left: 3%">		
-				<p id="i_qna_5_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign">
-					회사의 서비스에 대해서는 만족하십니까?
+				<p id="i_qna_5_title_content_txt" class="cPtagHmVisible cPtagFontSizeContent cFontColorWhiteLight cFontNormalWeight cTextJustifyWidthAlign" style="color:#007bff">
+					<b> [5] 회사의 서비스에 대해서는 만족하십니까? </b>
 				</p>		
 			</div>
 		</div>
 
-		<div id="i_qna_5_content"
-			class="cDivRelativeH"
-			style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="service" value="1"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 만족
-					</p>									
-				</div>				
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="service" value="2"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"shoes
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="service" value="3"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						보통
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="service" value="4"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						불만족
-					</p>									
-				</div>
-			</div>	
-			<div class="cDivRelativeH"
-				style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
-				<div class="cDivRelativeW" style="width: 30px; height: 100%;">
-					<input type="radio" name="service" value="5"/>					
-				</div>				
-				<div class="cDivRelativeW cDivPtagHmVisible" style="width: 150px; height: 20px;">
-					<p class="cPtagHmVisible cPtagFontSizeTrail cFontColorBlackMiddle cFontNormalWeight cTextLeftWidthAlign">
-						매우 불만족
-					</p>									
-				</div>
-			</div>		
-		</div>
-	</div>
+		<br>
+		<div id="i_qna_1_content"
+		class="cDivRelativeH"
+		style="width: 100%; height: 72%; margin: 0 auto; padding: 0; top: 2%;">
+		<div class="cDivRelativeH"
+			style="width: 90%; height: 20%; margin: 0; padding: 0; top: 0%; left: 2.2%">
+				<input type="radio" name="service" value="5"/>매우만족<p>	
+				<input type="radio" name="service" value="4"/> 만족	<p>				
+				<input type="radio" name="service" value="3"/> 보통  <p>			
+				<input type="radio" name="service" value="2"/> 불만족<p></p>					
+				<input type="radio" name="service" value="1"/> 매우 불만족	<p></p>				
 
+		</div>		
+	</div>
+</div>
 
 	<!-- 설문조사 경고 박스 레이아웃 -->
 	<div id="i_warm_container"
@@ -577,7 +346,7 @@
 		</p>
 	</div>
 
-
+	<br>
 	<!-- 제출 버튼 박스 레이아웃 -->
 
 	<div>
@@ -655,15 +424,6 @@
     </style> 
 
 <!-------------------------여기까지 ------------------------>
-
-
-
-
-
-
-
-
-
 
 
         </section>
